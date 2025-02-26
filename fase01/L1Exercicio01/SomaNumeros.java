@@ -1,4 +1,7 @@
-package fase01;
+/*1. Soma de Dois Números
+Escreva um programa que solicite ao usuário dois números inteiros e exiba a soma deles. */
+
+package fase01.L1Exercicio01;
 
 import java.util.Scanner;
 
