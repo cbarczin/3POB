@@ -3,6 +3,7 @@ Desenvolva um programa que leia o raio de um círculo e calcule sua área. */
 
 package fase01.L1Exercicio02;
 
+import java.util.Locale;
 import java.util.Scanner;
 
 public class AreaDeUmCirculo {
@@ -11,9 +12,9 @@ public class AreaDeUmCirculo {
         System.out.print("Informe o raio do círculo: ");
         double raio = entrada.nextDouble();
 
-        double area = 3.14159*(raio*raio);
+        double area = 3.14159*Math.pow(raio, 2);
 
-        System.out.print("A soma dos valores: " + area);
+        System.out.print("A soma dos valores: " + String.format(Locale.US, "%.2f", area));
         entrada.close();
     }
     

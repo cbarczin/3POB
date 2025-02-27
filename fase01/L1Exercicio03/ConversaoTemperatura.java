@@ -13,7 +13,7 @@ public class ConversaoTemperatura {
 
         float fahrenheit = (celsius * 9/5) + 32;
 
-        System.out.print("A temperatura  " + celsius + "º em fahrenheit: " + fahrenheit);
+        System.out.print("A temperatura  " + celsius + "ºC em fahrenheit é igual a: " + fahrenheit);
         entrada.close();
     }
 }

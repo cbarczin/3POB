@@ -1,6 +1,6 @@
 /*4. Cálculo de Média Simples
 Faça um programa que solicite ao usuário três notas (valores decimais) e exiba a média aritmética delas.*/
-package fase01.L1Exercicio03.L1Exercicio05;
+package fase01.L1Exercicio05;
 
 import java.util.Scanner;
 
