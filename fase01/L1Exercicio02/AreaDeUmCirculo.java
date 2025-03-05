@@ -14,7 +14,7 @@ public class AreaDeUmCirculo {
 
         double area = 3.14159*Math.pow(raio, 2);
 
-        System.out.print("A soma dos valores: " + String.format(Locale.US, "%.2f", area));
+        System.out.print("A área do círculo é igual a: " + String.format(Locale.US, "%.2f", area));
         entrada.close();
     }
     
