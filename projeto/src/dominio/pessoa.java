@@ -1,13 +1,13 @@
 package projeto.src.dominio;
 
-public class pessoa {
+public class Pessoa {
     private String nome;
     private int idade;
     private double altura;
     private double peso;
     private String sexo;
 
-public pessoa(String nome, int idade, double altura, double peso, String sexo) {
+public Pessoa(String nome, int idade, double altura, double peso, String sexo) {
     this.nome = nome;
     this.idade = idade;
     this.altura = altura;
@@ -56,16 +56,11 @@ public void setSexo(String sexo) {
 }
 
 public void listarPessoas() {
-    System.out.println(nome);
-    System.out.println(idade);
-    System.out.println(altura);
-    System.out.println(peso);
-    System.out.println(sexo);
-}
-
-    
-
-   
-
+    System.out.println("Nome: " + nome);
+    System.out.println("Idade: " + idade);
+    System.out.println("Altura: " + altura);
+    System.out.println("Peso: " + peso);
+    System.out.println("Sexo: " + sexo);
+    }
 }
 
