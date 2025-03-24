@@ -64,5 +64,36 @@ public void listarPessoas() {
     System.out.println("Sexo: " + sexo);
     }
 
+public double CalcularIMC() {
+    return peso/(altura*altura);
+}
+
+public String ClassificarIMC() {
+    double IMC = CalcularIMC();
+    String result = " ";
+
+    if(IMC < 18.5) {
+        result = "magreza";
+    } else {
+        if(IMC <= 24.9) {
+            result = "peso ideal";
+        } else {
+            if(IMC <= 29.9) {
+                result = "sobrepeso";
+            } else {
+                if(IMC <=34.9) {
+                    result = "obesidade II";
+                } else {
+                    if(IMC <= 39.9) {
+                        result = "obesidade III";
+                    }
+                }
+            }
+        }
+    }
+
+    return result;
+}
+
 }
 
