@@ -1,6 +1,6 @@
-package projeto.src.controle; 
+package projeto01.controle;
 
-import projeto.src.dominio.*;
+import projeto01.dominio.Pessoa;
 import java.util.Scanner;
 
 public class ControlarPessoa {

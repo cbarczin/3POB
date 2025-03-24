@@ -1,4 +1,4 @@
-package projeto.src.dominio;
+package projeto01.dominio;
 
 public class Pessoa {
     private String nome;
@@ -14,6 +14,7 @@ public Pessoa(String nome, int idade, double altura, double peso, String sexo) {
     this.peso = peso;
     this.sexo = sexo;
     }
+
 
 public String getNome() {
     return nome;
@@ -62,5 +63,6 @@ public void listarPessoas() {
     System.out.println("Peso: " + peso);
     System.out.println("Sexo: " + sexo);
     }
+
 }
 
