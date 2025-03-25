@@ -29,11 +29,8 @@ public class ControlarPessoa {
         System.out.println("-----------------------------------");
         System.out.println("Exibir dados da pessoa: ");
         pessoa.listarPessoas();
-        //pessoa.CalcularIMC();
         System.out.println(nome + ", seu IMC é: " + pessoa.CalcularIMC());
-        //pessoa.ClassificarIMC();
         System.out.println("A classificação do seu IMC é: " + pessoa.ClassificarIMC());
-        //pessoa.CalcularIMC();
         entrada.close();
     }
 }
