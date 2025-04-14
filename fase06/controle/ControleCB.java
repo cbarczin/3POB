@@ -1,20 +1,59 @@
 package fase06.controle;
 
 import java.util.Scanner;
-import java.util.ArrayList;
+//import java.util.ArrayList;
 
 import fase06.dominio.ContaBancaria;
 
 public class ControleCB {
-    public static void main(String[] args) {
-
+        public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
 
-        System.out.println("Digite o nome do titular: ");
+        int opcao;
+        double saldo = 0.0;
+
+        System.out.print("Informe o nome do titular da conta: ");
         String titular = entrada.nextLine();
 
-        System.out.println("Digite o saldo disponível");
-        double saldo = entrada.nextDouble();
+        ContaBancaria controle = new ContaBancaria(titular);
+
+        do {
+            System.out.println("==== MENU DE OPÇOES ====");
+            System.out.println("(1) Depositar");
+            System.out.println("(2) Sacar");
+            System.out.println("(3) Exibir saldo");
+            System.out.println("========================");
+            opcao = entrada.nextInt();
+
+            switch (opcao) {
+                case 1:
+                    System.out.print("Qual valor será depositado?: ");
+                    double deposito = entrada.nextDouble();
+                    saldo = controle.depositarValor(deposito, saldo);
+                    System.out.println(titular + ", o valor foi depositado com sucesso!");
+                    break;
+
+                case 2: 
+                    System.out.print("Qual o valor que será sacado?: ");
+                    double saque = entrada.nextDouble();
+                    saldo = controle.sacarValor(saque, saldo);
+                    System.out.println(titular + ", o valor foi debitado com sucesso!");
+                    break;
+
+                case 3: 
+                    System.out.println(titular + ", o saldo disponível é: " + saldo);
+                    break;
+
+                case 0:
+                    System.out.println("Encerrando programa...");
+                    break;
+
+                default:
+                    System.out.println("Opção inválida!");
+                    break;
+            }
+        } while (opcao != 0);
+
+        entrada.close();
     }
-    
 }
