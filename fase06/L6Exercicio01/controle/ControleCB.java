@@ -1,9 +1,9 @@
-package fase06.controle;
+package fase06.L6Exercicio01.controle;
+/*Crie um programa que simule uma conta bancária, permitindo depósitos e
+saques.*/
 
 import java.util.Scanner;
-//import java.util.ArrayList;
-
-import fase06.dominio.ContaBancaria;
+import fase06.L6Exercicio01.dominio.ContaBancaria;
 
 public class ControleCB {
         public static void main(String[] args) {

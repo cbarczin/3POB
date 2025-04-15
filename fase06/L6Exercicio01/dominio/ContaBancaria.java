@@ -1,4 +1,4 @@
-package fase06.dominio;
+package fase06.L6Exercicio01.dominio;
 
 public class ContaBancaria {
     private String titular;
