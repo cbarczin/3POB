@@ -1,4 +1,4 @@
-package exercAula.CadastroAlunos.dominio;
+package AtvAula.CadastroAlunos.dominio;
 
 public class Aluno {
     private int matricula;
@@ -36,7 +36,7 @@ public class Aluno {
     }
 
     public void mostrarInfos() {
-        System.out.println("O nome do aluno é: " + nome + ". Sua matrícula é: " + matricula +" e seu CR é: " + coeficienteRendimento);
+        System.out.println("Nome do aluno: " + nome + ". Sua matrícula é: " + matricula +" e seu CR é: " + coeficienteRendimento);
     }
 }
 
