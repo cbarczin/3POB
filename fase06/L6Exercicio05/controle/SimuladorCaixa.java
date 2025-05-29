@@ -1,7 +1,6 @@
 package fase06.L6Exercicio05.controle;
 
 import java.util.Scanner;
-
 import fase06.L6Exercicio05.dominio.CaixaEletronico;
 
 public class SimuladorCaixa {
@@ -36,5 +35,6 @@ public class SimuladorCaixa {
                     break;
             }
         }
+        entrada.close();
     }
 }
