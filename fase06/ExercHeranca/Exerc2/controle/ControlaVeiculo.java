@@ -19,7 +19,7 @@ public class ControlaVeiculo {
             System.out.println("0. Sair\n");
             opcao = entrada.nextInt();
             entrada.nextLine();
-            //System.out.println("");
+            
             switch (opcao) {
                 case 1:
                     System.out.print("\nQual é a marca do carro?: ");
