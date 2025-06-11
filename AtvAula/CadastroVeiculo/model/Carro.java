@@ -1,4 +1,4 @@
-package AtvAula.CadastroVeiculo.dominio;
+package AtvAula.CadastroVeiculo.model;
 
 public class Carro extends Veiculo {
     public int qntdPortas;

@@ -1,4 +1,4 @@
-package AtvAula.CadastroVeiculo.dominio;
+package AtvAula.CadastroVeiculo.model;
 
 interface Exibivel {
     void exibirDados();

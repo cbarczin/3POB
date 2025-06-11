@@ -1,11 +1,9 @@
-package AtvAula.CadastroVeiculo.dominio;
-
-//import AtvAula.CadastroVeiculo.dominio.*;
+package AtvAula.CadastroVeiculo.model;
 
 public abstract class Veiculo implements Exibivel {
-    public String placa;
-    public String modelo;
-    public int ano;
+    protected String placa;
+    protected String modelo;
+    protected int ano;
 
     public Veiculo(String placa, String modelo, int ano) {
         this.placa = placa;
@@ -37,6 +35,7 @@ public abstract class Veiculo implements Exibivel {
         this.ano = ano;
     }
 
-    
-
+    public void exibirDaddos() {
+        System.out.println("Placa: " + getPlaca() + "| Modelo: " + getModelo() + " | Ano: " + getAno());
+    }
 }
