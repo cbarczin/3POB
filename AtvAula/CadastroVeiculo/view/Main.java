@@ -1,10 +1,9 @@
 package AtvAula.CadastroVeiculo.view;
 
 import java.util.Scanner;
-
-import AtvAula.CadastroVeiculo.model.*;
-
 import java.util.ArrayList;
+import AtvAula.CadastroVeiculo.model.*;
+import AtvAula.CadastroVeiculo.controller.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -23,7 +22,7 @@ public class Main {
             System.out.println("\n");
             switch (opcao) {
                 case 1:
-                    CadastroController(veiculos, entrada);
+                    CadastroController.CadastroVeiculo(veiculos, entrada);
                     break;
 
                 case 2:
