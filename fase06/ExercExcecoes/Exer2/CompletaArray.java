@@ -1,4 +1,4 @@
-/*// Exercício 2: Leitura de Vários Números
+/* Exercício 2: Leitura de Vários Números
 // Crie um programa que leia cinco números inteiros do usuário e armazene-os em um array.
 // Caso o usuário digite algo que não seja inteiro, exiba uma mensagem de erro e repita a leitura até completar o array.*/
 
@@ -11,7 +11,6 @@ import java.util.InputMismatchException;
 public class CompletaArray {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
-
         ArrayList<Integer> numeros = new ArrayList<>();
 
         while (numeros.size() < 5) {

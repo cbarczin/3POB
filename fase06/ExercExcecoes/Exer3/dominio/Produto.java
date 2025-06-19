@@ -5,11 +5,17 @@
 
 package fase06.ExercExcecoes.Exer3.dominio;
 
+import fase06.ExercExcecoes.Exer3.exception.ValorInvalidoException;
+
 public class Produto {
     public String nome;
     public double preco;
 
-    public Produto(String nome, double preco) {
+    public Produto(String nome, double preco) throws ValorInvalidoException {
+        if (preco <= 0) {
+            throw new ValorInvalidoException("Preço deve ser maior que zero");
+        }
+
         this.nome = nome;
         this.preco = preco;
     }
